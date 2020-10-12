@@ -20,7 +20,7 @@ img_save_dir = package_dir / 'static'
 
 class ScoreCard:
     """
-    Requires an xml request of game_3/save_m, in either raw bytes or kbinxml.
+    Requires an xml request of game_3/save_m.
     Optional hiscore (add an 'old_score' element in the request) will display score difference on card.
 
     Usage:
