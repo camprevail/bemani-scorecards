@@ -45,7 +45,7 @@ def main():
                 scorecard = importlib.import_module(f'{module}.scorecard').ScoreCard(data)
                 img, info = scorecard.generate()
                 log.info('Generating scorecard')
-                return send_file(img, as_attachment=True, attachment_filename=time.strftime("museca-%Y%m%d-%H%M%S.png"))
+                return send_file(img, as_attachment=True, attachment_filename=time.strftime(f"{module}-%Y%m%d-%H%M%S.png"))
             except Exception as e:
                 log.info(e)
                 return render_template_string(repr(e)), 500
