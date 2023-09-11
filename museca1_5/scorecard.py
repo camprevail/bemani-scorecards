@@ -1,3 +1,6 @@
+# Run this script to test the scorecard rendering. It will pull data from assets/req-game_3-save_m.xml.
+
+
 import re, os, glob, logging
 from lxml import etree
 from PIL import Image, ImageDraw, ImageFont
@@ -28,7 +31,7 @@ img_save_dir = package_dir / 'static'
 class ScoreCard:
     """
     Requires an xml request of game_3/save_m.
-    Optional hiscore (add an 'old_score' element in the request) will display score difference on card.
+    Optional hiscore (add an 'old_score' element in the response) will display score difference on card.
 
     Usage:
     from scorecard import ScoreCard
@@ -341,6 +344,8 @@ class ScoreCard:
             [u'\u9B06', u'Ý'],
             [u'\u968D', u'Ü'],
             [u'\u9B2E', u'¡'],
+            [u'\u99B9', u'©'],
+            [u'\u99BF', u'♠'],
         ]
         for rep in replacements:
             name = name.replace(rep[0], rep[1])
@@ -348,7 +353,7 @@ class ScoreCard:
 
 
 if __name__ == '__main__':
-    tree = etree.parse('assets/req-game_3-save_m.xml') # File not included
+    tree = etree.parse('assets/req-game_3-save_m.xml')
     data = etree.tostring(tree)
     scorecard = ScoreCard(data)
     scorecard.generate()

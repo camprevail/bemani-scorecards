@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<call model="PIX:J:B:A:2018073002" srcid="01201000000000000000" tag="/50/AOD1">
+  <game_3 method="save_m" ver="0">
+    <refid __type="str">0000000000000000</refid>
+    <dataid __type="str">0000000000000000</dataid>
+    <music_id __type="u32">226</music_id>
+    <music_type __type="u32">2</music_type>
+    <score __type="u32">1000000</score>
+    <old_score __type="u32">915267</old_score>
+    <clear_type __type="u32">4</clear_type>
+    <score_grade __type="u32">8</score_grade>
+    <max_chain __type="u32">1007</max_chain>
+    <critical __type="u32">1007</critical>
+    <near __type="u32">0</near>
+    <error __type="u32">0</error>
+    <effective_rate __type="u32">4910</effective_rate>
+    <btn_rate __type="u32">8556</btn_rate>
+    <long_rate __type="u32">0</long_rate>
+    <vol_rate __type="u32">0</vol_rate>
+    <mode __type="u8">0</mode>
+    <gauge_type __type="u8">0</gauge_type>
+    <online_num __type="u16">0</online_num>
+    <local_num __type="u16">0</local_num>
+    <locid __type="str">0</locid>
+    <just_checker>
+      <before_3 __type="u16">3</before_3>
+      <before_2 __type="u16">5</before_2>
+      <before_1 __type="u16">27</before_1>
+      <just __type="u16">28</just>
+      <after_1 __type="u16">20</after_1>
+      <after_2 __type="u16">7</after_2>
+      <after_3 __type="u16">2</after_3>
+    </just_checker>
+    <drop_frame __type="u16">0</drop_frame>
+    <drop_frame_max __type="u16">25</drop_frame_max>
+    <drop_count __type="u16">0</drop_count>
+    <etc __type="str">card:182,21,41,medel:10-&gt;10,0-&gt;1,0-&gt;2,coloris:1484,muese:0,cur:20,lane:0,curve:2,seq:2,mission:G20-3(100.00%),DTime:0,0</etc>
+    <eaappli>
+      <is_image_store __type="bool">0</is_image_store>
+      <track_no __type="u16">0</track_no>
+      <player_name __type="str">TEST</player_name>
+      <appeal_id __type="u16">0</appeal_id>
+      <skill_level __type="s16">0</skill_level>
+      <skill_frame_type __type="s16">0</skill_frame_type>
+      <skill_name_id __type="s16">0</skill_name_id>
+    </eaappli>
+  </game_3>
+</call>

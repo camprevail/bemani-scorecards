@@ -44,10 +44,10 @@ def main():
             try:
                 scorecard = importlib.import_module(f'{module}.scorecard').ScoreCard(data)
                 img, info = scorecard.generate()
-                log.info('Generating scorecard')
+                log.info(f'Generating {module} scorecard')
                 return send_file(img, as_attachment=True, attachment_filename=time.strftime(f"{module}-%Y%m%d-%H%M%S.png"))
             except Exception as e:
-                log.info(e)
+                log.error(e)
                 return render_template_string(repr(e)), 500
     return render_template_string('game or version not supported'), 406
 

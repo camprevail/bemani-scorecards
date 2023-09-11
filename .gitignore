@@ -2,3 +2,4 @@
 *.env
 __pycache__
 .idea
+/museca1_5/assets/music-info-b.xml
