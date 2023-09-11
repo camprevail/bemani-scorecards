@@ -32,6 +32,9 @@ class ScoreCard:
     """
     Requires an xml request of game_3/save_m.
     Optional hiscore (add an 'old_score' element in the response) will display score difference on card.
+    Museca has an "Upload image" button on the results screen that sets the eaappli/is_image_store flag in the save_m request.
+    Check that flag to determine if it was pressed. The game doesn't actually take a screenshot.
+    The feature is activated by setting game_3/eaappli/relation to 1 in the game_3.load response. (It was never utilized on real eamuse.)
 
     Usage:
     from scorecard import ScoreCard

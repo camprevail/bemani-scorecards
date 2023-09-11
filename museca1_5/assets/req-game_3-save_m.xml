@@ -36,7 +36,7 @@
     <drop_count __type="u16">0</drop_count>
     <etc __type="str">card:182,21,41,medel:10-&gt;10,0-&gt;1,0-&gt;2,coloris:1484,muese:0,cur:20,lane:0,curve:2,seq:2,mission:G20-3(100.00%),DTime:0,0</etc>
     <eaappli>
-      <is_image_store __type="bool">0</is_image_store>
+      <is_image_store __type="bool">1</is_image_store>
       <track_no __type="u16">0</track_no>
       <player_name __type="str">TEST</player_name>
       <appeal_id __type="u16">0</appeal_id>
